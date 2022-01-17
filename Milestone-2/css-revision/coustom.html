@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coustom property</title>
+    <style>
+      :root {
+        --border-color: yellow;
+        --main-color: brown;
+        --border-color: brown;
+        --background-color: red;
+      }
+      h1 {
+        color: var(--background-color);
+      }
+      p {
+        color: brown;
+      }
+      h2 {
+        border: 2px solid var(--border-color);
+        color: var(--background-color);
+      }
+      h6 {
+        background-color: cadetblue;
+      }
+      footer {
+        color: var(--background-color);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>I am Exploring coustom css</h1>
+      <p>Welcome to my website</p>
+    </header>
+    <main>
+      <h2>My awsome content</h2>
+      <h6>My tiny Heading content</h6>
+    </main>
+    <footer>
+      <p><small>Copyright</small></p>
+    </footer>
+  </body>
+</html>
