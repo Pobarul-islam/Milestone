@@ -1,229 +1,53 @@
-/* Google Fonts  */
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&family=Poppins:wght@400;500&family=Roboto+Mono&display=swap");
 
-/* Common Style or utilites  */
-body {
-  font-family: "Poppins", sans-serif;
-  background: #f3f1ff;
-}
-main {
-  display: flex;
-  flex-direction: column;
+  <div class="container">
+    <h4 class="text-primary">Top Blogs</h4>
+  </div>
+  <div class="row g-3">
+    <div class="col-lg-6 d-flex">
+     <div>
+      <img width="177" height="117" src="images/images/blogs/blog-1.png" alt="">
+     </div>
 
-  align-items: center;
-}
-.container {
-  background-color: #ffffff;
-  width: 870px;
-  padding: 30px;
-  margin: 21px;
-  border-radius: 5px;
-}
-hr {
-  border: 1px solid #d1d1d1;
-  margin-bottom: 27px;
-}
+    <div class="ps-2">
+      <h3>13 of My Favorite
+        UI/UX Goodies</h3>
+        <p>By <a href="">Danny Sapio</a></p>
+    </div>
+  </div>
 
-/* Top Players Style  */
-.top-players {
-  margin-bottom: 30px;
-}
-.players {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-row-gap: 30px;
-}
-.section-title {
-  color: #562eff;
-  font-size: 24px;
-  margin-top: 3px;
-}
-.player {
-  display: flex;
-  align-items: center;
-}
-.players img {
-  width: 56px;
-  height: 56px;
-}
-.player-name {
-  margin-left: 16px;
-}
+    <div class="col-lg-6 d-flex">
+     <div>
+      <img width="177" height="117" src="images/images/blogs/blog-2.png" alt="">
+     </div>
 
-/* Top blog styles  */
-.blogs {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-}
-.blog {
-  display: flex;
-}
+    <div class="ps-2">
+      <h3>UI cheat sheet: 
+        list vs grids</h3>
+        <p>By <a href="">Tess Gadd</a></p>
+    </div>
+  </div>
+    <div class="col-lg-6 d-flex">
+     <div>
+      <img width="177" height="117" src="images/images/blogs/blog-3.png" alt="">
+     </div>
 
-.blog .thumbnail img {
-  width: 177px;
-  height: 117px;
-}
-.blog-info {
-  margin-left: 16px;
-}
-.blog-title {
-  font-size: 20px;
-}
-.blog-author {
-  font-size: 16px;
-  color: #9f9f9f;
-}
-.blog-author a {
-  text-decoration: none;
-  font-size: 16px;
-  color: #562eff;
-}
+    <div class="ps-2">
+      <h3>7 typography tips 
+        for interface design</h3>
+        <p>By <a Jeremiah href="">Jeremiah Lam</a></p>
+    </div>
+  </div>
+    <div class="col-lg-6 d-flex">
+     <div>
+      <img width="177" height="117" src="images/images/blogs/blog-4.png" alt="">
+     </div>
 
-/* Courses Style  */
-.courses {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-column-gap: 24px;
-}
-.course-info {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.course .course-banner img {
-  width: 224px;
-  height: 104px;
-}
-.fa-star {
-  font-size: 12px;
-}
-.fa-star.filled {
-  color: #ffc014;
-}
-.fa-star.empty {
-  color: #aeaeae;
-}
-.four {
-  color: #a2a2a2;
-  margin-left: 5px;
-}
-.fa-clock {
-  background-color: #ffe4e8;
-  color: #ff4a60;
-  padding: 5px;
-  margin-left: 10px;
-  border-radius: 10px;
-}
+    <div class="ps-2">
+      <h3>Your logo is 
+        copied</h3>
+        <p>By <a href="">Ferdinand Vogler</a></p>
+    </div>
+  </div>
+  </div>
 
-/* ----------------------
-      Media Query
------------------------- */
-/* Mobile Devices  */
-@media only screen and (max-width: 700px) {
- 
-.container {
-  background-color: gray;
-  width: 870px;
-  padding: 30px;
-  margin: 21px;
-  border-radius: 5px;
-}
-hr {
-  border: 1px solid #fff;
-  margin-bottom: 27px;
-}
-
-/* Top Players Style  */
-
-.players {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-	margin-left: 40%;
-	grid-row-gap: 20%;
-
- 
-}
-.section-title {
-  color: #562eff;
-  font-size: 24px;
-  margin-top: 3px;
-}
-.player {
-  display: flex;
-  align-items: center;
-}
-.players img {
-  width: 56px;
-  height: 56px;
-}
-.player-name {
-  margin-left: 16px;
-}
-
-/* Top blog styles  */
-.blogs {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-}
-.blog {
-  display: flex;
-}
-
-.blog .thumbnail img {
-  width: 177px;
-  height: 117px;
-}
-.blog-info {
-  margin-left: 16px;
-}
-.blog-title {
-  font-size: 20px;
-}
-.blog-author {
-  font-size: 16px;
-  color: #9f9f9f;
-}
-.blog-author a {
-  text-decoration: none;
-  font-size: 16px;
-  color: #562eff;
-}
-
-/* Courses Style  */
-.courses {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-column-gap: 24px;
-}
-.course-info {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.course .course-banner img {
-  width: 224px;
-  height: 104px;
-}
-.fa-star {
-  font-size: 12px;
-}
-.fa-star.filled {
-  color: #ffc014;
-}
-.fa-star.empty {
-  color: #aeaeae;
-}
-.four {
-  color: #a2a2a2;
-  margin-left: 5px;
-}
-.fa-clock {
-  background-color: #ffe4e8;
-  color: #ff4a60;
-  padding: 5px;
-  margin-left: 10px;
-  border-radius: 10px;
-}
-
-}
-
+</section>
